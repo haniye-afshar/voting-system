@@ -69,20 +69,14 @@ $('#submit').click(function submit1(){
                 mydata[i] += parseInt(document.getElementById(i).value);
             }
             
-            $.ajax({
+            $.when( $.ajax({
                 url :'update/',
                 dataType: 'json',
                 type :'POST',
-                contentType: 'application/json',
                 data : JSON.stringify(mydata),
-                processData: false,
-                success:function(data){ 
-                    console.log(mydata);
-                    
+                success:function(data){                   
                 }
-                
-            })
-            $.when(submit1()).then(document.location.href = '/results');
+                }) ).done(document.location.href = '/results')
         }
     });
     
