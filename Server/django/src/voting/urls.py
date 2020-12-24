@@ -36,4 +36,3 @@ urlpatterns = [
     path("logout/", logout_view)
 ]
 
-urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
