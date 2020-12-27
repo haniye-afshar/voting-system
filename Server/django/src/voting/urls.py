@@ -17,9 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from .views import home_page,add_element,start_voting,reset,voting_page,login_page,register_page,logout_view,update_score,result_page
 
-from django.conf import settings
-from django.conf.urls.static import static
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page),
