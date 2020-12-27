@@ -25,7 +25,7 @@ SECRET_KEY = 'xaad6p*%1&-yg99zk6fvofma2t-j8*q_v74b2tg61^ab)0386o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['meritmoney.ir','www.meritmoney.ir','127.0.0.1']
+ALLOWED_HOSTS = ['meritmoney.ir','www.meritmoney.ir','127.0.0.1','localhost']
 
 
 # Application definition
