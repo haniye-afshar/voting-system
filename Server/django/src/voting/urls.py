@@ -34,5 +34,3 @@ urlpatterns = [
     path('register/',register_page),
     path("logout/", logout_view)
 ]
-
-urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
